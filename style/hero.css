@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 .hero h1 {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -9,7 +10,7 @@
   min-height: 100dvh;
   background: #00cc00;
   color: white;
-  font-family: Futura;
+  font-family: "Indie Flower", sans-serif;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
@@ -42,4 +43,12 @@
   .hero {
     font-size: 75px;
   }
+}
+a:link {
+  color: rgb(42, 126, 0);
+  text-decoration: none;
+}
+a:link:hover {
+  color: rgb(126, 42, 0);
+  text-decoration: underline;
 }
