@@ -7,7 +7,7 @@ html {
 
 body {
   /* Change to something you like, but please do customize the font! */
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Indie Flower", sans-serif;
   line-height: 1.4;
   /* reset default margins */
   padding: 0;
@@ -34,4 +34,11 @@ main {
   line-height: 1.8; /* choose a line spacing */
   font-size: 18px; /* choose a font size */
   margin: 0 auto; /* center the content */
+}
+body {
+  background: linear-gradient(
+    rgba(158, 249, 255, 0.738),
+    rgba(0, 255, 106, 0.897)
+  );
+  background-attachment: fixed;
 }

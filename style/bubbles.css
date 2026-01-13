@@ -1,0 +1,63 @@
+/* This code was generated with help from Github Copilot in response to the prompt 
+"Please make a script that uses bubble.png. Whenever the user clicks a bubble, 
+it should pop and disappear shortly after. Bubbles should also periodically float from the bottom 
+of the screen to the top" - 1/13/26 */
+
+/* Style for the bubble element */
+.bubble {
+  /* Position the bubble so we can place it anywhere on screen */
+  position: fixed;
+
+  /* Start at the bottom of the screen */
+  bottom: -100px;
+
+  /* Use the bubble.png image as the background */
+  background-image: url("../bubble.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* Make the bubble clickable */
+  cursor: pointer;
+
+  /* Make sure bubble appears on top of other content */
+  z-index: 1000;
+
+  /* Apply the float-up animation */
+  animation-name: float-up;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+
+  /* Add a slight side-to-side wobble effect */
+  animation-name: float-up, wobble;
+}
+
+/* Animation that makes the bubble float from bottom to top */
+@keyframes float-up {
+  /* Start at the bottom of the screen */
+  from {
+    bottom: -100px;
+    opacity: 0.8;
+  }
+
+  /* End at the top of the screen */
+  to {
+    bottom: 110vh;
+    opacity: 0;
+  }
+}
+
+/* Animation that makes the bubble wobble side to side */
+@keyframes wobble {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
