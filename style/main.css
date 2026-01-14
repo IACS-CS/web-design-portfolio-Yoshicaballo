@@ -3,7 +3,7 @@
 html {
   /* Make #id links scroll smoothly */
   scroll-behavior: smooth;
-  text-align: center;
+  
 }
 
 body {
@@ -24,10 +24,6 @@ h2 {
   text-decoration-color: #fff700;
   margin-bottom: 8px;
 }
-p {
-  margin-top: 0;
-}
-
 main {
   /* Make sure our content can scroll the hero away */
   min-height: 100dvh;
