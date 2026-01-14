@@ -3,6 +3,7 @@
 html {
   /* Make #id links scroll smoothly */
   scroll-behavior: smooth;
+  text-align: center;
 }
 
 body {
